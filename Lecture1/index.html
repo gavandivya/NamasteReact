@@ -18,8 +18,10 @@
     <div>
       <h4>Hello Divya! I am displayed using HTML😌</h4>
     </div>
+
     <!--Using JS-->
     <div id="jsRoot"></div>
+
     <!--Using React-->
     <div id="reactRoot">I will load if you dont render anything😂</div>
     <div id="reactRoot1">I will load if you dont render anything😂</div>
@@ -33,6 +35,7 @@
     h4Tag.innerText = "Hello Divya! I am displayed using JS😀";
     getJsRoot.appendChild(h4Tag);
   </script>
+
   <!-- Added React and ReactDOM CDN -->
   <script
     crossorigin
@@ -42,6 +45,7 @@
     crossorigin
     src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
   ></script>
+
   <!-- using inline JS -->
   <script>
     const h3Tag = React.createElement(
@@ -54,6 +58,7 @@
     );
     getReactRoot.render(h3Tag);
   </script>
+
   <!-- using external JS -->
   <script src="App.js"></script>
 </html>
