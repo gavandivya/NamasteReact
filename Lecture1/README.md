@@ -5,3 +5,5 @@
 - using HTML
 - using Javascript
 - using React
+
+![](https://github.com/gavandivya/NamasteReact/blob/main/Lecture1/output.png)
