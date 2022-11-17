@@ -16,7 +16,7 @@
   <body>
     <!--Using HTML-->
     <div>
-      <h4>Hello Divya! I am are displayed using HTML😌</h4>
+      <h4>Hello Divya! I am displayed using HTML😌</h4>
     </div>
     <!--Using JS-->
     <div id="jsRoot"></div>
@@ -30,7 +30,7 @@
   <script>
     const h4Tag = document.createElement("h4");
     const getJsRoot = document.getElementById("jsRoot");
-    h4Tag.innerText = "Hello Divya! I am are displayed using JS😀";
+    h4Tag.innerText = "Hello Divya! I am displayed using JS😀";
     getJsRoot.appendChild(h4Tag);
   </script>
   <!-- Added React and ReactDOM CDN -->
@@ -47,7 +47,7 @@
     const h3Tag = React.createElement(
       "h3",
       {},
-      "Hello Divya! I am are displayed using React😄(Inline JS)"
+      "Hello Divya! I am displayed using React😄(Inline JS)"
     );
     const getReactRoot = ReactDOM.createRoot(
       document.getElementById("reactRoot")
