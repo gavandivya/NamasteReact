@@ -2,6 +2,6 @@
   
 ## Build Hello World program
 - using HTML
-- using JS
+- using Javascript
 - using React
         
