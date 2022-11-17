@@ -7,5 +7,5 @@
 - using React
 
 ## Output
-<!-- ![](https://github.com/gavandivya/NamasteReact/blob/main/Lecture1/output.png)
- -->
+![](https://github.com/gavandivya/NamasteReact/blob/main/Lecture1/output.png)
+
