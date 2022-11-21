@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Hello Divya!</title>
+  </head>
+  <body>
+    <!--Using HTML-->
+    <div>
+      <h4>Hello Divya! I am displayed using HTML😌</h4>
+    </div>
+
+    <!--Using JS-->
+    <div id="jsRoot"></div>
+
+    <!--Using React-->
+    <div id="reactRoot">I will load if you dont render anything.😂</div>
+    <div id="reactRoot1">I will load if you dont render anything.😂</div>
+    <div id="reactRoot178">
+      I will load if you dont render anything or mess the code.😂
+    </div>
+  </body>
+  <script>
+    const h4Tag = document.createElement("h4");
+    const getJsRoot = document.getElementById("jsRoot");
+    h4Tag.innerText = "Hello Divya! I am displayed using JS😀";
+    getJsRoot.appendChild(h4Tag);
+  </script>
+
+  <!-- Added React and ReactDOM CDN -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+
+  <!-- using inline JS -->
+  <script>
+    const h3Tag = React.createElement(
+      "h3",
+      {},
+      "Hello Divya! I am displayed using React😄(Inline JS)"
+    );
+    const getReactRoot = ReactDOM.createRoot(
+      document.getElementById("reactRoot")
+    );
+    getReactRoot.render(h3Tag);
+  </script>
+
+  <!-- using external JS -->
+  <script src="App.js"></script>
+</html>
