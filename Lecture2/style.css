@@ -1,0 +1,29 @@
+.btn {
+  border-radius: 10px;
+  background-color: rgb(97, 219, 251);
+  color: rgb(28, 2, 60);
+}
+
+.search {
+  outline: auto;
+  outline-color: rgb(97, 219, 251);
+}
+
+.navbar {
+  background-color: rgb(28, 2, 60) !important;
+  background-image: linear-gradient(
+    to right,
+    rgb(28, 2, 60),
+    rgb(126, 51, 237),
+    rgb(28, 2, 60)
+  );
+  color: #fff !important;
+}
+
+a {
+  color: rgb(159, 102, 244) !important;
+}
+
+img {
+  margin-right: 1rem;
+}
