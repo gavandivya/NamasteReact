@@ -14,4 +14,4 @@ Components with JSX
 - Add search box in right
 - Add CSS to make it look nice
 
-![Image](https://i.imgur.com/0Z0Z0Z0.png)
+![Image](https://github.com/gavandivya/NamasteReact/blob/sessionOne/Lecture2/assets/nav.png)
