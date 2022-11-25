@@ -63,8 +63,8 @@ const withJSX = (
   </div>
 );
 
-const rootJSX = createRoot(document.getElementById("rootJSX"));
-rootJSX.render(withJSX);
+const rootWithJSX = createRoot(document.getElementById("rootWithJSX"));
+rootWithJSX.render(withJSX);
 
 //with using JSX with funtion component
 const WithJSXComponent = () => {
