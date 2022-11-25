@@ -38,7 +38,7 @@ const HeaderComponent = () => {
 const root = createRoot(document.getElementById("root"));
 root.render(<HeaderComponent />);
 
-//without using JSX
+//without using JSX.
 const withoutJSX = React.createElement(
   "div",
   { id: "title" },
@@ -50,7 +50,7 @@ const withoutJSX = React.createElement(
 const rootWithoutJSX = createRoot(document.getElementById("rootWithoutJSX"));
 rootWithoutJSX.render(withoutJSX);
 
-//with using JSX
+//with using JSX.
 const withJSX = (
   <div id="title">
     <h1>First Heading</h1>
