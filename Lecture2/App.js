@@ -10,28 +10,32 @@ import img from "./assets/logo512.png";
 //Header
 const HeaderComponent = () => {
   return (
-    <nav className="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img
-          src={img}
-          width="35"
-          height="35"
-          className="d-inline-block align-top"
-          alt=""
-        />
-        Namaste React - Brainy Fools
-      </a>
-      <form className="form-inline">
-        <input
-          class="form-control mr-sm-2 search"
-          type="search"
-          placeholder="Search"
-        />
-        <button className="btn my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
-    </nav>
+    <>
+      <nav className="navbar navbar-light bg-light">
+        <a className="navbar-brand" href="#">
+          <img
+            src={img}
+            width="35"
+            height="35"
+            className="d-inline-block align-top"
+            alt=""
+          />
+          Namaste React - Brainy Fools
+        </a>
+        <form className="form-inline">
+          <input
+            className="form-control mr-sm-2 search"
+            type="search"
+            placeholder="Search"
+          />
+          <button className="btn my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </nav>
+      {/* Done Composition */}
+      <WithJSXComponent />
+    </>
   );
 };
 
@@ -61,3 +65,14 @@ const withJSX = (
 
 const rootJSX = createRoot(document.getElementById("rootJSX"));
 rootJSX.render(withJSX);
+
+//with using JSX with funtion component
+const WithJSXComponent = () => {
+  return (
+    <div id="title">
+      <h1>First Heading </h1>
+      <h2>Second Heading</h2>
+      <h3>Third Heading</h3>
+    </div>
+  );
+};
