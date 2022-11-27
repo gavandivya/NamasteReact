@@ -10,7 +10,7 @@
 }
 
 .navbar {
-  background-color: rgb(28, 2, 60) !important;
+  /* background-color: rgb(169, 169, 169) !important; */
   background-image: linear-gradient(
     to right,
     rgb(28, 2, 60),
@@ -21,9 +21,5 @@
 }
 
 a {
-  color: rgb(159, 102, 244) !important;
-}
-
-img {
-  margin-right: 1rem;
+  color: rgb(243, 221, 253) !important;
 }

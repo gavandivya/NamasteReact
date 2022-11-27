@@ -1,0 +1,72 @@
+[
+  {
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0&w=176&h=200&fit=cover&q=100",
+    "name": "Divya Gavandi",
+    "designation": "SDE @ ICICI Lombard",
+    "experience": "2 years",
+    "location": "Mumbai"
+  },
+  {
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D176heZu552Ht49GdFfVIS9alXn0Xp43kt&w=176&h=200&fit=cover&q=100",
+    "name": "Aditi Farkya",
+    "designation": "SDE @Salesforce",
+    "experience": "8 years",
+    "location": "MadhyaPradesh"
+  },
+  {
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1FU75q7qFlqS89Ob8hdt9hOJOfpJFtfFz&w=176&h=200&fit=cover&q=100",
+    "name": "Nikita Jit",
+    "designation": "SDE @Accenture ",
+    "experience": "2 years",
+    "location": "Rourkela"
+  },
+  {
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1wRpKCNQ_mhAr_8qJXqZ1hMYEfzfJNGQn&w=176&h=200&fit=cover&q=100",
+    "name": "Deepak_Dev",
+    "designation": "SDE @ Magic edtech",
+    "experience": "4 years",
+    "location": "Pilani, Rajasthan"
+  },
+  {
+    "profilePic": "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
+    "name": "Soumya Gangamwar",
+    "designation": "SDE @LTI",
+    "experience": "6 years",
+    "location": "Kukatpally"
+  },
+  {
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0&w=176&h=200&fit=cover&q=100",
+    "name": "Shreeraj",
+    "designation": "SDE @Bacancy Tech",
+    "experience": "6 years",
+    "location": "Ahmedabad"
+  },
+  {
+    "profilePic": "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
+    "name": "Anurag Ambekar",
+    "designation": "SDE @ Born Group",
+    "experience": "3 years",
+    "location": "Mumbai"
+  },
+  {
+    "profilePic": "https://drive.google.com/uc?export=view&id=176heZu552Ht49GdFfVIS9alXn0Xp43kt",
+    "name": "Palabh Borah",
+    "designation": "SDE @Akamai Tech",
+    "experience": "3 years",
+    "location": "Hojai, Assam"
+  },
+  {
+    "profilePic": "https://drive.google.com/uc?export=view&id=1FU75q7qFlqS89Ob8hdt9hOJOfpJFtfFz",
+    "name": "Prajwal",
+    "designation": "SDE @EY",
+    "experience": "3 years",
+    "location": "Hosapete"
+  },
+  {
+    "profilePic": "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
+    "name": "Abhishek Sharma",
+    "designation": "Student @GLBTIM",
+    "experience": "2 years",
+    "location": "Greater Noida"
+  }
+]

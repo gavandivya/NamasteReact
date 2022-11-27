@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "simple-image-cdn": "0.0.7"
   },
   "devDependencies": {
     "parcel": "^2.8.0",
