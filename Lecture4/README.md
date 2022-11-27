@@ -1,17 +1,12 @@
 ## 🧐 Coding Task
 
-- Create a Nested header element using React.createElemenet(h1,h2,h3 inside a div with class 'title')
-- Create the same element using JSX
-- Pass attributes into the tag in JSX.
-- Composition of Component.
+- The header should have your team Name/logo
+- The body should render cards
+- Each card should have details of your team members
+- Add Photo, Name, Place, Company, Designation all info
+- Add CSS to your cards to make it look beautiful
+- Make your cards dynamic and data-driven
 
 ---
 
-Creating a Header Component from Scratch using Function
-Components with JSX
-
-- Add Logo on left
-- Add search box in right
-- Add CSS to make it look nice
-
-![Image](https://github.com/gavandivya/NamasteReact/blob/sessionOne/Lecture2/assets/nav.png)
+<!-- ![Image](https://github.com/gavandivya/NamasteReact/blob/sessionOne/Lecture2/assets/nav.png) -->
