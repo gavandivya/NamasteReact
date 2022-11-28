@@ -10,18 +10,20 @@
 }
 
 .navbar {
-  background-color: rgb(169, 169, 169) !important;
+  background-color: rgb(255, 255, 255) !important;
   /* background-image: linear-gradient(
     to right,
     rgb(28, 2, 60),
     rgb(126, 51, 237),
     rgb(28, 2, 60)
   ); */
-  color: #fff !important;
+  padding: 0.1rem 1rem;
+  box-shadow: 0px 4px 16px rgb(36, 36, 36);
+  font-weight: 600;
 }
-
 a {
-  color: rgb(243, 221, 253) !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 24px !important;
 }
 
 .card-img-top {
@@ -94,4 +96,20 @@ body {
 
 h6 {
   text-shadow: 1px 1px 10px #878787;
+}
+
+.row:hover .card {
+  filter: blur(5px);
+}
+
+.row .card:hover {
+  transform: scale(1.1);
+  filter: blur(0) !important;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 50%;
+    margin: auto;
+  }
 }

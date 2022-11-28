@@ -7,6 +7,27 @@ import getImageUrl from "simple-image-cdn";
 const HeaderComponent = () => {
   return (
     <>
+      <nav className="navbar navbar-light bg-light">
+        <a className="navbar-brand" href="#">
+          <img
+            className="d-inline-block align-top mr-4"
+            width={50}
+            src="https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1ZN0OHfI7ngyLNIn0mDY36iFE2AewNMJ3&w=290&h=250&fit=cover&q=100"
+            alt=""
+          />
+          Brainy Fools
+        </a>
+        {/* <form className="form-inline">
+          <input
+            className="form-control mr-sm-2 search"
+            type="search"
+            placeholder="Search"
+          />
+          <button className="btn my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form> */}
+      </nav>
       <CardComponent />
     </>
   );
@@ -14,15 +35,15 @@ const HeaderComponent = () => {
 
 const CardComponent = () => (
   <div className="container">
-    <img
+    {/* <img
       className="mt-3"
       width={50}
       src="https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1ZN0OHfI7ngyLNIn0mDY36iFE2AewNMJ3&w=290&h=250&fit=cover&q=100"
       alt=""
-    />
-    <div className="row">
+    /> */}
+    <div className="row" style={{ textAlign: "center" }}>
       {data.map((e) => (
-        <div className="col mt-4">
+        <div className="col-sm-6 col-md-4 col-lg-3 col-xl mt-4">
           <div className="card" style={{ width: "11rem" }}>
             <img src={e.profilePic} className="card-img-top img-fluid" alt="" />
             <div className="card-body">
@@ -44,7 +65,7 @@ const CardComponent = () => (
               <small>{e.location}</small>
             </div>
             <div className="icons card-footer">
-              <a href="https://www.linkedin.com/in/divya-gavandi">
+              <a href={e.linkedin} target="_blank">
                 <i>
                   <img
                     src="https://img.icons8.com/color/75/000000/linkedin.png"
@@ -52,17 +73,22 @@ const CardComponent = () => (
                   />
                 </i>
               </a>
-              <a href="https://www.instagram.com/gavandivya/">
+              <a href={e.instagram} target="_blank">
                 <i>
                   <img src="https://img.icons8.com/fluency/75/null/instagram-new.png" />
                 </i>
               </a>
-              <a href="https://discordapp.com/users/Divya#5041">
+              <a href={e.discord} target="_blank">
                 <i>
                   <img
                     style={{ width: "20px", height: "20px" }}
                     src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/75/null/external-discord-chat-for-social-gaming-between-peers-logo-color-tal-revivo.png"
                   />
+                </i>
+              </a>
+              <a href={e.github} target="_blank">
+                <i>
+                  <img src="https://img.icons8.com/ios-glyphs/75/null/github.png" />
                 </i>
               </a>
             </div>
@@ -90,12 +116,12 @@ const root = createRoot(document.getElementById("root"));
 root.render(<HeaderComponent />);
 
 //For converting to cdn
-const src = getImageUrl(
+/*const src = getImageUrl(
   "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
   { w: "176", h: "200", fit: "cover", q: 100 }
 );
 const src1 = getImageUrl(
-  "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
+  "https://drive.google.com/uc?export=view&id=1AYXXFRrI7Ebryw4Q_Yo-VPQDuL9DEdgg",
   { w: "176", h: "200", fit: "cover", q: 100 }
 );
 const src2 = getImageUrl(
@@ -115,10 +141,34 @@ const src5 = getImageUrl(
   { w: "280", h: "250", fit: "cover", q: 100 }
 );
 
-console.info(src);
-console.info(src1);
-console.info(src2);
-console.info(src3);
-console.info(src4);
-console.info(src5);
+const src6 = getImageUrl(
+  "https://drive.google.com/uc?export=view&id=1QaO6elNUIA1yUCMvgPU3_wAKwwE2QAlx",
+  { w: "280", h: "250", fit: "cover", q: 100 }
+);
+
+const src7 = getImageUrl(
+  "https://drive.google.com/uc?export=view&id=10sR3gQHDY_yZfa_4v5RGNOf8FUt4HANt",
+  { w: "280", h: "250", fit: "cover", q: 100 }
+);
+
+const src8 = getImageUrl(
+  "https://drive.google.com/uc?export=view&id=1HlnEe5PclQmhkaTNvJitMern1Kahn_-m",
+  { w: "280", h: "250", fit: "cover", q: 100 }
+);
+
+const src9 = getImageUrl(
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/925px-Unknown_person.jpg",
+  { w: "280", h: "250", fit: "cover", q: 100 }
+);
+
+const src10 = getImageUrl(
+  "https://drive.google.com/uc?export=view&id=1xE_rdfCRvcTk0aA5ToHC6cI46WFGwl9K",
+  { w: "280", h: "250", fit: "cover", q: 100 }
+);
+const src11 = getImageUrl(
+  "https://drive.google.com/uc?export=view&id=1KbEFMU4fFuVXy4-UFaAV6lpRujGPOnNm",
+  { w: "280", h: "250", fit: "cover", q: 100 }
+);
+
+*/
 

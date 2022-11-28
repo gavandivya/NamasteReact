@@ -4,69 +4,119 @@
     "name": "Divya Gavandi",
     "designation": "SDE @ ICICI Lombard",
     "experience": "2 years",
-    "location": "Mumbai"
+    "location": "Mumbai",
+    "instagram": "https://www.instagram.com/gavandivya/",
+    "github": "https://github.com/gavandivya",
+    "linkedin": "https://www.linkedin.com/in/divya-gavandi",
+    "discord": "https://discordapp.com/users/Divya#5041",
+    "captain": false
   },
   {
-    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D176heZu552Ht49GdFfVIS9alXn0Xp43kt&w=176&h=200&fit=cover&q=100",
-    "name": "Aditi Farkya",
-    "designation": "SDE @Salesforce",
-    "experience": "8 years",
-    "location": "MadhyaPradesh"
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1AYXXFRrI7Ebryw4Q_Yo-VPQDuL9DEdgg&w=176&h=200&fit=cover&q=100",
+    "name": "Palabh Borah",
+    "designation": "SDE @Akamai Tech",
+    "experience": "3 years",
+    "location": "Hojai, Assam",
+    "instagram": "https://www.instagram.com/mr._serotonin/",
+    "github": "https://github.com/Bhallora",
+    "linkedin": "https://www.linkedin.com/in/pallav-borah-076320108/",
+    "discord": "https://discordapp.com/users/Pallab_Borah#1830",
+    "captain": false
   },
   {
     "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1FU75q7qFlqS89Ob8hdt9hOJOfpJFtfFz&w=176&h=200&fit=cover&q=100",
     "name": "Nikita Jit",
     "designation": "SDE @Accenture ",
     "experience": "2 years",
-    "location": "Rourkela"
+    "location": "Rourkela",
+    "instagram": "",
+    "github": "",
+    "linkedin": "",
+    "discord": "",
+    "captain": false
+  },
+  {
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1xE_rdfCRvcTk0aA5ToHC6cI46WFGwl9K&w=280&h=250&fit=cover&q=100",
+    "name": "Abhishek Sharma",
+    "designation": "Student @GLBTIM",
+    "experience": "2 years",
+    "location": "Greater Noida",
+    "instagram": "https://www.instagram.com/oye.abhiiii/",
+    "github": "https://github.com/it-abhishek2000",
+    "linkedin": "https://www.linkedin.com/in/abhishek-sharma-73b7811a0/",
+    "discord": "https://discordapp.com/users/it_abhishekSharma#5302",
+    "captain": true
   },
   {
     "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1wRpKCNQ_mhAr_8qJXqZ1hMYEfzfJNGQn&w=176&h=200&fit=cover&q=100",
     "name": "Deepak_Dev",
     "designation": "SDE @ Magic edtech",
     "experience": "4 years",
-    "location": "Pilani, Rajasthan"
+    "location": "Pilani, Rajasthan",
+    "instagram": "",
+    "github": "",
+    "linkedin": "",
+    "discord": "",
+    "captain": false
   },
   {
-    "profilePic": "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
-    "name": "Soumya Gangamwar",
-    "designation": "SDE @LTI",
-    "experience": "6 years",
-    "location": "Kukatpally"
-  },
-  {
-    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0&w=176&h=200&fit=cover&q=100",
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1KbEFMU4fFuVXy4-UFaAV6lpRujGPOnNm&w=280&h=250&fit=cover&q=100",
     "name": "Shreeraj",
     "designation": "SDE @Bacancy Tech",
     "experience": "6 years",
-    "location": "Ahmedabad"
+    "location": "Ahmedabad",
+    "instagram": "",
+    "github": "",
+    "linkedin": "",
+    "discord": "",
+    "captain": false
   },
   {
-    "profilePic": "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
-    "name": "Anurag Ambekar",
-    "designation": "SDE @ Born Group",
-    "experience": "3 years",
-    "location": "Mumbai"
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D10sR3gQHDY_yZfa_4v5RGNOf8FUt4HANt&w=280&h=250&fit=cover&q=100",
+    "name": "Soumya Gangamwar",
+    "designation": "SDE @LTI",
+    "experience": "6 years",
+    "location": "Kukatpally",
+    "instagram": "",
+    "github": "",
+    "linkedin": "",
+    "discord": "",
+    "captain": false
   },
   {
-    "profilePic": "https://drive.google.com/uc?export=view&id=176heZu552Ht49GdFfVIS9alXn0Xp43kt",
-    "name": "Palabh Borah",
-    "designation": "SDE @Akamai Tech",
-    "experience": "3 years",
-    "location": "Hojai, Assam"
-  },
-  {
-    "profilePic": "https://drive.google.com/uc?export=view&id=1FU75q7qFlqS89Ob8hdt9hOJOfpJFtfFz",
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1QaO6elNUIA1yUCMvgPU3_wAKwwE2QAlx&w=280&h=250&fit=cover&q=100",
     "name": "Prajwal",
     "designation": "SDE @EY",
     "experience": "3 years",
-    "location": "Hosapete"
+    "location": "Hosapete",
+    "instagram": "",
+    "github": "",
+    "linkedin": "",
+    "discord": "",
+    "captain": false
   },
   {
-    "profilePic": "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
-    "name": "Abhishek Sharma",
-    "designation": "Student @GLBTIM",
-    "experience": "2 years",
-    "location": "Greater Noida"
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D176heZu552Ht49GdFfVIS9alXn0Xp43kt&w=176&h=200&fit=cover&q=100",
+    "name": "Aditi Farkya",
+    "designation": "SDE @Salesforce",
+    "experience": "8 years",
+    "location": "MadhyaPradesh",
+    "instagram": "",
+    "github": "",
+    "linkedin": "",
+    "discord": "",
+    "captain": false
+  },
+  {
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1HlnEe5PclQmhkaTNvJitMern1Kahn_-m&w=280&h=250&fit=cover&q=100",
+    "name": "Anurag Ambekar",
+    "designation": "SDE @ Born Group",
+    "experience": "3 years",
+    "location": "Mumbai",
+    "instagram": "",
+    "github": "",
+    "linkedin": "",
+    "discord": "",
+    "captain": false
   }
 ]
