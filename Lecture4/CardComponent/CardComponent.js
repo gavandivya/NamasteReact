@@ -1,61 +1,65 @@
 import data from '../data.json'
 import getImageUrl from "simple-image-cdn";
+// data.pop(data[4]); // for removing 6th member of team
+
 const CardComponent = () => (
     <div className="container">
         <div className="row" style={{ textAlign: "center" }}>
-            {data.map((e) => (
-                <div className="col-sm-6 col-md-4 col-lg-3 col-xl mt-4" key={e.id}>
-                    <div className="card" style={{ width: "11rem" }}>
-                        <img src={e.profilePic} className="card-img-top img-fluid" alt="" />
-                        <div className="card-body">
-                            <h6>{e.name}</h6>
-                            <img
-                                className="mr-1"
-                                width={14}
-                                height={14}
-                                src="https://img.icons8.com/plasticine/100/null/business-buildings.png"
-                            />
-                            <small>{e.designation}</small>
-                            <br />
-                            <img
-                                className="mr-1"
-                                width={12}
-                                height={12}
-                                src="https://img.icons8.com/fluency/48/null/marker.png"
-                            />
-                            <small>{e.location}</small>
-                        </div>
-                        <div className="icons card-footer">
-                            <a href={e.linkedin} target="_blank">
-                                <i>
+            {
+                data.map((e, index) => {
+                    // console.log("Index as a key - ", index, e.name);
+
+                    return (
+                        <div className="col-sm-6 col-md-4 col-lg-3 col-xl mt-4" key={e.id}>
+                            <div className="card" style={{ width: "11rem" }}>
+                                <img src={e.profilePic} className="card-img-top img-fluid" alt="" />
+                                <div className="card-body">
+                                    <h6>{e.name}</h6>
                                     <img
-                                        src="https://img.icons8.com/color/75/000000/linkedin.png"
-                                        alt=""
+                                        className="mr-1"
+                                        width={14}
+                                        height={14}
+                                        src="https://img.icons8.com/plasticine/100/null/business-buildings.png"
                                     />
-                                </i>
-                            </a>
-                            <a href={e.instagram} target="_blank">
-                                <i>
-                                    <img src="https://img.icons8.com/fluency/75/null/instagram-new.png" />
-                                </i>
-                            </a>
-                            <a href={e.discord} target="_blank">
-                                <i>
+                                    <small>{e.designation}</small>
+                                    <br />
                                     <img
-                                        style={{ width: "20px", height: "20px" }}
-                                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/75/null/external-discord-chat-for-social-gaming-between-peers-logo-color-tal-revivo.png"
+                                        className="mr-1"
+                                        width={12}
+                                        height={12}
+                                        src="https://img.icons8.com/fluency/48/null/marker.png"
                                     />
-                                </i>
-                            </a>
-                            <a href={e.github} target="_blank">
-                                <i>
-                                    <img src="https://img.icons8.com/ios-glyphs/75/null/github.png" />
-                                </i>
-                            </a>
+                                    <small>{e.location}</small>
+                                </div>
+                                <div className="icons card-footer">
+                                    <a href={e.linkedin} target="_blank">
+                                        <i>
+                                            <img
+                                                src="https://img.icons8.com/color/75/000000/linkedin.png"
+                                                alt=""
+                                            />
+                                        </i>
+                                    </a>
+                                    <a href={e.github} target="_blank">
+                                        <i>
+                                            <img src="https://img.icons8.com/ios-glyphs/75/null/github.png" />
+                                        </i>
+                                    </a>
+                                    <a href={e.instagram} target="_blank">
+                                        <i>
+                                            <img src="https://img.icons8.com/fluency/75/null/instagram-new.png" />
+                                        </i>
+                                    </a>
+                                    <a href={e.discord} target="_blank">
+                                        <i>
+                                            <img src="https://img.icons8.com/color/48/null/discord-new-logo.png" />                                </i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            ))}
+                    )
+                }
+                )}
         </div>
     </div>
 );
