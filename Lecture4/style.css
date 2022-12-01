@@ -1,12 +1,22 @@
+body {
+  background-color: rgb(94, 94, 94);
+  background-image: linear-gradient(
+    to right,
+    rgb(211, 211, 211),
+    rgb(82, 80, 80),
+    black
+  );
+}
+
 .btn {
   border-radius: 10px;
-  background-color: rgb(97, 219, 251);
+  background-color: rgb(255, 255, 255);
   color: rgb(28, 2, 60);
 }
 
 .search {
   outline: auto;
-  outline-color: rgb(97, 219, 251);
+  outline-color: rgb(0, 0, 0);
 }
 
 .navbar {
@@ -58,16 +68,6 @@ p {
   padding: 0;
 }
 
-body {
-  background-color: rgb(94, 94, 94);
-  background-image: linear-gradient(
-    to right,
-    rgb(211, 211, 211),
-    rgb(82, 80, 80),
-    black
-  );
-}
-
 .card-body {
   margin: auto;
   padding: 5px 0;
@@ -98,18 +98,32 @@ h6 {
   text-shadow: 1px 1px 10px #878787;
 }
 
-.row:hover .card {
+/* .row:hover .card {
   filter: blur(5px);
-}
+} */
 
 .row .card:hover {
   transform: scale(1.1);
-  filter: blur(0) !important;
+}
+
+form {
+  display: flex;
+  justify-content: right;
 }
 
 @media screen and (max-width: 576px) {
   .container {
     width: 50%;
     margin: auto;
+  }
+
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  form {
+    justify-content: center;
   }
 }
