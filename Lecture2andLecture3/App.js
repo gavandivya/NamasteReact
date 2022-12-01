@@ -35,6 +35,10 @@ const HeaderComponent = () => {
       </nav>
       {/* Done Composition */}
       <WithJSXComponent />
+      {<TestingComponent />}
+      {TestingComponent}
+      {TestingComponent()}
+      {<TestingComponent></TestingComponent>}
     </>
   );
 };
@@ -70,9 +74,17 @@ rootWithJSX.render(withJSX);
 const WithJSXComponent = () => {
   return (
     <div id="title">
-      <h1>First Heading </h1>
-      <h2>Second Heading</h2>
-      <h3>Third Heading</h3>
+      <h1>First</h1>
+      <h2>Second</h2>
+      <h3>Third </h3>
     </div>
   );
 };
+const rootWithJSXComp = createRoot(document.getElementById("rootWithJSXComp"));
+rootWithJSXComp.render(<WithJSXComponent />);
+
+const TestingComponent = () => <h1>I am a Testing h1</h1>;
+console.info(TestingComponent);
+console.info(TestingComponent());
+console.info(<TestingComponent />);
+console.info(<TestingComponent></TestingComponent>);
