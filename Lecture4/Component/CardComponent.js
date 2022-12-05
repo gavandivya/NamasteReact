@@ -1,7 +1,5 @@
-import data from "../data.json";
 import { SocialMediaIcon as icon } from "../socialMediaIcon";
-import getImageUrl from "simple-image-cdn";
-import React, { useState, useEffect } from "react";
+// import getImageUrl from "simple-image-cdn";
 
 const CardComponent = ({ details }) => {
   const { profilePic, name, designation, location, github, linkedin, instagram, discord } = details;
@@ -68,10 +66,12 @@ const CardComponent = ({ details }) => {
   "https://drive.google.com/uc?export=view&id=1sfMYnY6cVsF8PuITK8V_2rsqhc9Zs3h0",
   { w: "176", h: "200", fit: "cover", q: 100 }
 );
+
 const src1 = getImageUrl(
-  "https://drive.google.com/uc?export=view&id=1AYXXFRrI7Ebryw4Q_Yo-VPQDuL9DEdgg",
+  "https://drive.google.com/uc?export=view&id=1o9Ee8D3L1zQIGPR6rxvnAZae0UHQ9KsJ",
   { w: "176", h: "200", fit: "cover", q: 100 }
 );
+
 const src2 = getImageUrl(
   "https://drive.google.com/uc?export=view&id=1FU75q7qFlqS89Ob8hdt9hOJOfpJFtfFz",
   { w: "176", h: "200", fit: "cover", q: 100 }

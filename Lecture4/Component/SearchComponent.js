@@ -32,3 +32,21 @@ const SearchComponent = ({ setFilteredData }) => {
 }
 
 export default SearchComponent;
+
+
+const jsObj = {
+    name: 'Divya',
+    location: "Mumbai"
+}
+console.log(jsObj);
+// const stringify = JSON.stringify(jsObj);
+console.log(JSON.stringify(jsObj));
+// console.log(JSON.parse(stringify));
+
+const jsonObj = '{"name": "Divya","location": "Mumbai"}'
+console.log(jsonObj);
+console.log(JSON.parse(jsonObj));
+
+// console.log(jsonObj);
+// console.log(JSON.stringify(jsonObj));
+// console.log(JSON.parse(jsonObj));

@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react"
+import React, { useState } from "react"
 import { createRoot } from "react-dom/client";
 import HeaderComponent from "./Component/HeaderComponent";
 import SearchComponent from "./Component/SearchComponent";
@@ -17,7 +16,7 @@ const BodyComponent = () => {
 }
 
 
-const NoRecord = () => (<div style={{ textAlign: "center", color: "white" }}>
+const NoRecord = () => (<div className="noRecord">
   <h3>No Record Found</h3>
 </div>)
 
