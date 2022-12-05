@@ -1,6 +1,6 @@
 import CardComponent from './CardComponent';
 const CardContainerComponent = ({ DataFromAPI }) => {
-    console.log(DataFromAPI);
+    // console.log(DataFromAPI);
     return (
         <div className="container">
             <div className="row" style={{ textAlign: "center" }}>

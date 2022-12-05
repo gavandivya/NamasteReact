@@ -24,7 +24,7 @@ const BodyComponent = () => {
             const UserInfo = await fetch(`https://api.github.com/users/${userName}`);
             return await UserInfo.json();
         }));
-        console.log(dataArray)
+        // console.log(dataArray)
         sessionStorage.setItem('teamData', JSON.stringify(githubdata));
         return githubdata;
     }
