@@ -83,8 +83,8 @@ const WithJSXComponent = () => {
 const rootWithJSXComp = createRoot(document.getElementById("rootWithJSXComp"));
 rootWithJSXComp.render(<WithJSXComponent />);
 
-const TestingComponent = () => <h1>I am a Testing h1</h1>;
-console.info(TestingComponent);
-console.info(TestingComponent());
-console.info(<TestingComponent />);
-console.info(<TestingComponent></TestingComponent>);
+// const TestingComponent = () => <h1>I am a Testing h1</h1>;
+// console.info(TestingComponent);
+// console.info(TestingComponent());
+// console.info(<TestingComponent />);
+// console.info(<TestingComponent></TestingComponent>);
