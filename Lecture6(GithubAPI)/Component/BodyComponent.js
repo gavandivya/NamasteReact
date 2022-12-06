@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import SearchComponent from './SearchComponent';
 import CardContainerComponent from "./CardContainerComponent";
 import Skeleton from 'react-loading-skeleton'
-import { SkeletonTheme } from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css'
 import { SkeletonTheme } from "react-loading-skeleton";
 

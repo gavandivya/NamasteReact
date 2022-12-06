@@ -13,8 +13,6 @@ API to be used - https://api.github.com/users/{userName}
 - Added Search Functionality to filter out team member
 - Added Skelton Loading
 
+## Video for Skelton Loading
 
-Video for Skelton Loading
---
 https://user-images.githubusercontent.com/49062060/205804237-aa4c6992-4fc3-4a99-80ed-1f71c320044b.mp4
-
