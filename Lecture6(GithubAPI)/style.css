@@ -54,6 +54,7 @@ a {
   /* background: linear-gradient(to right, #03a9f4, #fff 100%); */
   backdrop-filter: blur(15px);
   box-shadow: 5px 6px 16px #000000;
+  width: 11rem !important;
   /* border-top: rgb(28, 2, 60) 1px solid;
   border-left: rgb(28, 2, 60) 1px solid; */
 }

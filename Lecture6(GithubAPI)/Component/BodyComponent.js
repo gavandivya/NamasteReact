@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import SearchComponent from './SearchComponent';
-import CardContainerComponent from "./CardContainerComponent";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import { SkeletonTheme } from "react-loading-skeleton";
+
+import SearchComponent from './SearchComponent';
+import CardContainerComponent from "./CardContainerComponent";
+
 
 const BodyComponent = () => {
     const [filteredData, setFilteredData] = useState([]);
@@ -26,14 +28,13 @@ const BodyComponent = () => {
     useEffect(() => {
         if (!sessionStorage.getItem('teamData')) {
             getGithubApiData().then((githubdata) => {
-                setLoading(false)
+                setLoading(false);
                 setDataFromAPI(githubdata);
             });
         }
         else {
             setDataFromAPI(JSON.parse(sessionStorage.getItem('teamData')));
-            setLoading(false)
-
+            setLoading(false);
         }
     }, []);
 
