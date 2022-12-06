@@ -6,12 +6,11 @@ const CardComponent = ({ details }) => {
     followers,
     public_repos,
     location,
-    html_url,
     company,
     avatar_url,
   } = details;
   return (
-    <div className="col-sm-6 col-md-4 col-lg-3 col-xl mt-4">
+    <div className="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
       <div className="card" style={{ width: "11rem" }}>
         <img src={avatar_url} className="card-img-top img-fluid" alt="" />
         <div className="card-body">

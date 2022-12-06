@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react"
 import { createRoot } from "react-dom/client";
 import HeaderComponent from "./Component/HeaderComponent";
 import BodyComponent from "./Component/BodyComponent";
@@ -8,6 +7,7 @@ const App = () => (
   <>
     <HeaderComponent />
     <BodyComponent />
+
   </>
 );
 
