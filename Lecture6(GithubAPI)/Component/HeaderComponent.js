@@ -1,4 +1,4 @@
-import { SocialMediaIcon as icon } from "../socialMediaIcon";
+import { SocialMediaIcon as icon } from "../utils/socialMediaIcon";
 const HeaderComponent = () => (
   <nav className="navbar navbar-light bg-light">
     <a className="navbar-brand" href="#">
@@ -8,7 +8,7 @@ const HeaderComponent = () => (
         src={icon.logo}
         alt="logo"
       />
-      Brainy Fools
+      {icon.title}
     </a>
   </nav>
 );

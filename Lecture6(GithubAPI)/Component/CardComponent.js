@@ -1,4 +1,4 @@
-import { SocialMediaIcon as icon } from "../socialMediaIcon";
+import { SocialMediaIcon as icon } from "../utils/socialMediaIcon";
 
 const CardComponent = ({ details }) => {
   const {
