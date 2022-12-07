@@ -9,7 +9,7 @@ const CardComponent = ({ details }) => {
         <img
           src={profilePic}
           className="card-img-top img-fluid"
-          alt=""
+          alt="profilePic"
         />
         <div className="card-body">
           <h6>{name}</h6>

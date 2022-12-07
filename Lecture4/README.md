@@ -10,4 +10,4 @@ Build your Team App
 - Make your cards dynamic and data-driven
 - Add Search Functionality to filter out team member
 
-<!-- ![Image](https://github.com/gavandivya/NamasteReact/blob/sessionOne/Lecture2/assets/nav.png) -->
+![Image](https://github.com/gavandivya/NamasteReact/blob/sessionOne/Lecture2andLecture3/assets/teampic.png)

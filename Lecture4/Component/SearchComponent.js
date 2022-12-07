@@ -13,7 +13,6 @@ const SearchComponent = ({ setFilteredData }) => {
         <form className="form-inline m-3" onSubmit={(e) => {
             e.preventDefault();
             const filteredData = searchTeamdetails(searchText);
-            console.info(filteredData);
             setFilteredData(filteredData);
         }}>
             <input
@@ -33,20 +32,16 @@ const SearchComponent = ({ setFilteredData }) => {
 
 export default SearchComponent;
 
-
+//assignment theory task
 const jsObj = {
     name: 'Divya',
     location: "Mumbai"
 }
 console.log(jsObj);
-// const stringify = JSON.stringify(jsObj);
+const stringify = JSON.stringify(jsObj);
 console.log(JSON.stringify(jsObj));
-// console.log(JSON.parse(stringify));
+console.log(JSON.parse(stringify));
 
 const jsonObj = '{"name": "Divya","location": "Mumbai"}'
 console.log(jsonObj);
 console.log(JSON.parse(jsonObj));
-
-// console.log(jsonObj);
-// console.log(JSON.stringify(jsonObj));
-// console.log(JSON.parse(jsonObj));
