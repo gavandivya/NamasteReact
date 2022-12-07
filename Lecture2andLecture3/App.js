@@ -18,7 +18,7 @@ const HeaderComponent = () => {
             width="35"
             height="35"
             className="d-inline-block align-top"
-            alt=""
+            alt="logo"
           />
           Namaste React - Brainy Fools
         </a>

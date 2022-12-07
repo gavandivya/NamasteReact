@@ -12,7 +12,7 @@ const CardComponent = ({ details }) => {
   return (
     <div className="col-sm-6 col-md-4 col-lg-3 col-xl mt-4">
       <div className="card">
-        <img src={avatar_url} className="card-img-top img-fluid" alt="" />
+        <img src={avatar_url} className="card-img-top img-fluid" alt="avatar" />
         <div className="card-body">
           <h6>{login}</h6>
           <img className="mr-1" width={14} height={14} src={icon.org} />

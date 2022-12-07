@@ -23,7 +23,6 @@ const SearchComponent = ({ DataFromAPI, setFilteredData, setNoRecord }) => {
       onSubmit={(e) => {
         e.preventDefault();
         const filteredData = searchTeamdetails(searchText, DataFromAPI);
-        // console.info(filteredData);
         if (filteredData.length > 0) {
           setFilteredData(filteredData);
           setNoRecord(false);
