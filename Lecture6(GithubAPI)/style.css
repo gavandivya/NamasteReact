@@ -31,9 +31,14 @@ body {
   box-shadow: 0px 4px 16px rgb(36, 36, 36);
   font-weight: 600;
 }
+
 a {
   color: rgb(0, 0, 0) !important;
-  font-size: 24px !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(77, 77, 77) !important;
 }
 
 .card-img-top {
@@ -41,11 +46,19 @@ a {
   border-radius: 15px 15px 0 0px !important;
 }
 
-.img-fluid {
+.card .img-fluid {
   min-height: 180px;
   max-height: 180px;
   min-width: 10.9rem;
   max-width: 10.9rem;
+}
+
+.img-fluid {
+  width: 490px;
+}
+
+.login_id {
+  color: #fff;
 }
 
 .card {

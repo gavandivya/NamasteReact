@@ -25,8 +25,8 @@ const BodyComponent = () => {
 
     useEffect(() => {
         if (!sessionStorage.getItem('teamData')) {
-            getGithubApiData().then((githubdata) => {
-                setDataFromAPI(githubdata);
+            getGithubApiData().then((data) => {
+                setDataFromAPI(data);
             }).catch((err) => {
                 console.log(err);
             }).finally(() => setLoading(false));
