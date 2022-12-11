@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ErrorComponent from "./ErrorComponent";
+
 const ProfileComponent = () => {
   const { id } = useParams();
   const [user, setUser] = useState("");
@@ -21,7 +21,6 @@ const ProfileComponent = () => {
     let getArray = JSON.parse(sessionStorage.getItem("teamData"));
     getArray.map((member) => {
       if (id == member.login) {
-        console.info(member.login)
         setUser(member.name);
       }
     });
@@ -35,6 +34,7 @@ const ProfileComponent = () => {
           <div className="col-sm-12 col-md-6 mt-3">
             <img
               src={`https://github-readme-stats.vercel.app/api?username=${id}`}
+              alt="ongoing-stat-divya"
               className="img-fluid"
             />
           </div>
@@ -48,13 +48,12 @@ const ProfileComponent = () => {
           <div className="col-12 mt-3">
             <img
               src={`https://github-readme-stats.vercel.app/api/top-langs?username=${id}&layout=compact`}
-              alt="ongoing-streak-divya"
+              alt="ongoing-lang-divya"
               className="img-fluid"
             />
           </div>
         </div>
       </div>
-      <br></br>
     </>
   );
 };
