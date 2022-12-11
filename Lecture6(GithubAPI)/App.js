@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-import HeaderComponent from "./Component/HeaderComponent";
-import BodyComponent from "./Component/BodyComponent";
-import ErrorComponent from "./Component/ErrorComponent";
-import ProfileComponent from "./Component/ProfileRouteComponent";
+import HeaderComponent from "./components/HeaderComponent";
+import BodyComponent from "./components/BodyComponent";
+import ErrorComponent from "./components/ErrorComponent";
+import ProfileComponent from "./components/ProfileRouteComponent";
 
 const App = () => (
   <>
