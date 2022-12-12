@@ -34,11 +34,11 @@ const HeaderComponent = () => {
         </form>
       </nav>
       {/* Done Composition */}
-      <WithJSXComponent />
+      {/* <WithJSXComponent />
       {<TestingComponent />}
       {TestingComponent}
       {TestingComponent()}
-      {<TestingComponent></TestingComponent>}
+      {<TestingComponent></TestingComponent>} */}
     </>
   );
 };
