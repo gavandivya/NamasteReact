@@ -9,8 +9,8 @@ class AboutUsChildComponent extends Component {
 
         this.state = {
             login: "Divya",
-            company: "divya@gmail.com",
-            followers: "9617526431",
+            company: "IL",
+            followers: 0,
             test: "On first child render"
         };
         console.log("Child constructor()");
