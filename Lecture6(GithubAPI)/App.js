@@ -5,11 +5,14 @@ import HeaderComponent from "./components/HeaderComponent";
 import BodyComponent from "./components/BodyComponent";
 import ErrorComponent from "./components/ErrorComponent";
 import ProfileComponent from "./components/ProfileRouteComponent";
+import AboutUsComponent from "./components/AboutUsComponent";
+import AboutUsChildComponent from './components/AboutUsChildComponent'
 
 const App = () => (
   <>
     <HeaderComponent />
     <Outlet />
+
   </>
 );
 
@@ -21,15 +24,21 @@ const appRouter = createBrowserRouter([
     children: [
       { index: true, element: <BodyComponent /> },
       {
-        path: "/:id",
+        path: "profile/:id",
         element: <ProfileComponent />,
+      },
+      {
+        path: "/aboutUs",
+        element: <AboutUsComponent />,
+        children: [
+          {
+            path: "aboutUsChild",
+            element: <AboutUsChildComponent />
+          }
+        ]
       },
     ],
   },
-  // {
-  //   path: "/aboutUs/:id",
-  //   element: <AboutUsComponent />,
-  // }
 ]);
 
 const root = createRoot(document.getElementById("root"));
