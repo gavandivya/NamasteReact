@@ -4,6 +4,7 @@ class NestedChildComponent extends React.Component {
 
     constructor(props) {
         super(props)
+        console.log(this.props.test);
         console.log("NestedChildComponent constructor() - " + this.props.test);
     }
 

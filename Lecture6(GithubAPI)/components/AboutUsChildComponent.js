@@ -1,12 +1,11 @@
-import React from "react";
 import { Component } from 'react'
 import NestedChildComponent from "./NestedChildComponent";
 
 class AboutUsChildComponent extends Component {
 
+
     constructor(props) {
         super(props);
-
         this.state = {
             login: "Divya",
             company: "IL",

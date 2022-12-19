@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import ThemeContext from "../context/ThemeContext.js";
 
 const searchTeamdetails = (searchedText, DataFromAPI) => {
   return DataFromAPI.filter(
@@ -17,6 +18,8 @@ const searchTeamdetails = (searchedText, DataFromAPI) => {
 
 const SearchComponent = ({ DataFromAPI, setFilteredData, setNoRecord }) => {
   const [searchText, setSearchText] = useState("");
+  const { themeContext } = useContext(ThemeContext)
+
   return (
     <form
       className="form-inline m-3"
@@ -32,13 +35,13 @@ const SearchComponent = ({ DataFromAPI, setFilteredData, setNoRecord }) => {
       }}
     >
       <input
-        className="form-control mr-2 search"
+        className={`form-control mr-2 search ${themeContext === "dark" ? "bg-dark text-white" : "bg-light text-black"}`}
         type="search"
         placeholder="Search"
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
       />
-      <button className="btn my-2 my-0" type="submit">
+      <button className={`btn my-2 my-0" type="submit ${themeContext === "dark" ? "darkbg" : "lightbg"}`}>
         <i className="fa fa-search"></i>
       </button>
     </form>

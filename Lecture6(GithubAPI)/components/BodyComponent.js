@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { SkeletonTheme } from "react-loading-skeleton";
-
 import SearchComponent from "./SearchComponent";
 import CardContainerComponent from "./CardContainerComponent";
+import NoRecord from "./NoRecordComponent";
+import ThemeContext from "../context/ThemeContext";
 
 const BodyComponent = () => {
   const [filteredData, setFilteredData] = useState([]);
@@ -23,6 +24,7 @@ const BodyComponent = () => {
     "shreerajjadeja",
     "nikitaj-57",
   ];
+  const { themeContext } = useContext(ThemeContext);
 
   const getGithubApiData = async () => {
     let githubdata = await Promise.all(
@@ -58,7 +60,7 @@ const BodyComponent = () => {
     for (let index = 0; index < githubUserNames.length; index++) {
       rows.push(
         <div className="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4" key={index}>
-          <div className="item card" style={{ width: "11rem" }}>
+          <div className="item card" style={{ backgroundColor: themeContext === "dark" ? "#232324" : "#ffffff", width: "11rem" }} >
             <div className="item-img">
               <Skeleton width={170} height={180} />
             </div>
@@ -70,7 +72,7 @@ const BodyComponent = () => {
       );
     }
     return (
-      <SkeletonTheme color="#F5F5F5" highlightColor="#ffffff">
+      <SkeletonTheme highlightColor={`${themeContext === "dark" ? "#252525" : "#ffffff"}`} baseColor={`${themeContext === "dark" ? "#343a40" : "#e2dfdf"}`}>
         <div className="container">
           <div className="row" style={{ textAlign: "center" }}>
             {rows}
@@ -98,10 +100,5 @@ const BodyComponent = () => {
   );
 };
 
-const NoRecord = () => (
-  <div className="noRecord">
-    <h3>No Record Found</h3>
-  </div>
-);
 
 export default BodyComponent;
