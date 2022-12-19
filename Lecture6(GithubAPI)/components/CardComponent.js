@@ -9,7 +9,7 @@ const CardComponent = ({ details }) => {
       <div className="card">
         <img src={avatar_url} className="card-img-top img-fluid" alt="avatar" />
         <div className="card-body">
-          <Link to={`/${login}`}>
+          <Link to={`/profile/${login}`}>
             <h6>{login}</h6>
           </Link>
           <img className="mr-1" width={14} height={14} src={icon.org} />
