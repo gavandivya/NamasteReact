@@ -50,6 +50,9 @@ const SearchTeamCityComponent = () => {
         if (getMemberByCity(cityName).length == 0) {
             setNoRecord(true);
         }
+        else {
+            setNoRecord(false);
+        }
     }, [cityName])
 
     if (loading) {
