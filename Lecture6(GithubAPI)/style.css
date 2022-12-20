@@ -1,11 +1,5 @@
 body {
-  background-color: rgb(94, 94, 94);
-  background-image: linear-gradient(
-    to right,
-    rgb(211, 211, 211),
-    rgb(82, 80, 80),
-    black
-  );
+  background-image: linear-gradient(black, black);
 }
 
 .btn {

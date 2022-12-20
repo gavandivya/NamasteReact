@@ -33,7 +33,10 @@ const HeaderComponent = () => {
         } to="/" className="navbar-item nav-link">
           <span>Github_Users</span>
         </NavLink >
-        <i className={`${themeContext === "dark" ? "fa fa-sun" : "fa fa-moon"}`} onClick={() => setThemeContext(themeContext === "dark" ? "light" : "dark")}></i>
+        <i className={`${themeContext === "dark" ? "fa fa-sun" : "fa fa-moon"}`} onClick={() => {
+          setThemeContext(themeContext === "dark" ? "light" : "dark");
+          document.body.style.backgroundImage = themeContext === "dark" ? "linear-gradient(to right,rgb(211, 211, 211),rgb(82, 80, 80),#000)" : "linear-gradient(#000,#000)";
+        }}></i>
       </div>
     </nav >
   )
