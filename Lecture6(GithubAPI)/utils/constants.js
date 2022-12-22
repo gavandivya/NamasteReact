@@ -23,7 +23,7 @@ export const appRouter = createBrowserRouter([
             },
             {
                 path: "/aboutUs",
-                element: <Suspense fallback={<h6>Loading...</h6>}><AboutUsComponent /></Suspense>,
+                element: <AboutUsComponent />,
                 children: [
                     {
                         path: "aboutUsChild",
