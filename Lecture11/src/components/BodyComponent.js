@@ -1,11 +1,8 @@
-import { useState, useEffect, useContext } from "react";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-import { SkeletonTheme } from "react-loading-skeleton";
+import { useState, useEffect } from "react";
 import SearchComponent from "./SearchComponent";
 import CardContainerComponent from "./CardContainerComponent";
 import NoRecord from "./NoRecordComponent";
-import ThemeContext from "../context/ThemeContext";
+import SkeletonUIComponent from "./SkeletonUIComponent";
 
 const BodyComponent = () => {
   const [filteredData, setFilteredData] = useState([]);
@@ -24,7 +21,6 @@ const BodyComponent = () => {
     "shreerajjadeja",
     "nikitaj-57",
   ];
-  const { themeContext } = useContext(ThemeContext);
 
   const getGithubApiData = async () => {
     let githubdata = await Promise.all(
@@ -56,28 +52,7 @@ const BodyComponent = () => {
   }, []);
 
   if (loading) {
-    let rows = [];
-    for (let index = 0; index < githubUserNames.length; index++) {
-      rows.push(
-        <div className="m-5" key={index}>
-          <div className="item card" style={{ backgroundColor: themeContext === "dark" ? "#232324" : "#ffffff", width: "11rem" }} >
-            <div className="item-img">
-              <Skeleton width={170} height={180} />
-            </div>
-            <h6 className="item-title">
-              <Skeleton count={5} width={170} />
-            </h6>
-          </div>
-        </div>
-      );
-    }
-    return (
-      <SkeletonTheme highlightColor={`${themeContext === "dark" ? "#252525" : "#ffffff"}`} baseColor={`${themeContext === "dark" ? "#343a40" : "#e2dfdf"}`}>
-        <div className="flex flex-wrap justify-evenly" style={{ textAlign: "center" }}>
-          {rows}
-        </div>
-      </SkeletonTheme>
-    );
+    return <SkeletonUIComponent />
   }
 
   return (
