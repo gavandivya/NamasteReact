@@ -24,7 +24,7 @@ const HeaderComponent = () => {
       <div className="px-5">
         <NavLink style={({ isActive }) =>
           isActive ? activeStyle : null
-        } to="/SearchByCity" className="navbar-item nav-link">
+        } to="/searchByCity" className="navbar-item nav-link">
           <span className="p-2 m-2">Team</span>
         </NavLink >
         <NavLink style={({ isActive }) =>
@@ -32,7 +32,7 @@ const HeaderComponent = () => {
         } to="/" className="navbar-item nav-link">
           <span className="p-2 m-2">Github_Users</span>
         </NavLink >
-        <i className={`${themeContext === "dark" ? "fa fa-sun text-white" : "fa fa-moon text-slate-800"}`} onClick={() => {
+        <i className={`cursor-pointer ${themeContext === "dark" ? "fa fa-sun text-white" : "fa fa-moon text-slate-800"}`} onClick={() => {
           setThemeContext(themeContext === "dark" ? "light" : "dark");
           document.body.style.backgroundImage = themeContext === "dark" ? "linear-gradient(to right,rgb(211, 211, 211),rgb(82, 80, 80),#000)" : "linear-gradient(#000,#000)";
         }}></i>

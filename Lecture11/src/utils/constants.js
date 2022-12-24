@@ -32,7 +32,7 @@ export const appRouter = createBrowserRouter([
                 ]
             },
             {
-                path: "/SearchByCity",
+                path: "/searchByCity",
                 element: <Suspense fallback={<h6>Loading...</h6>}><SearchTeamCityComponent /></Suspense>,
             },
         ],

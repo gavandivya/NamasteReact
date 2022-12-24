@@ -25,7 +25,7 @@ const HeaderComponent = () => {
       <div className="tabRight">
         <NavLink style={({ isActive }) =>
           isActive ? activeStyle : undefined
-        } to="/SearchByCity" className="navbar-item nav-link">
+        } to="/searchByCity" className="navbar-item nav-link">
           <span>Team</span>
         </NavLink >
         <NavLink style={({ isActive }) =>
