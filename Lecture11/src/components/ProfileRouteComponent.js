@@ -30,7 +30,7 @@ const ProfileComponent = () => {
   return (
     <>
       <div className="container-fluid mt-2" style={{ textAlign: "center" }}>
-        <h4 className="login_id">{user}</h4>
+        <h4 className="font-bold text-xl text-white">{user}</h4>
         <div className="row">
           <div className="col-sm-12 col-md-6 mt-3">
             <img
