@@ -1,17 +1,10 @@
 body {
-  background-color: rgb(94, 94, 94);
-  background-image: linear-gradient(
-    to right,
-    rgb(211, 211, 211),
-    rgb(82, 80, 80),
-    black
-  );
+  background-image: linear-gradient(black, black);
 }
 
 .btn {
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  color: rgb(28, 2, 60);
 }
 
 .search {
@@ -20,25 +13,57 @@ body {
 }
 
 .navbar {
-  background-color: rgb(255, 255, 255) !important;
-  /* background-image: linear-gradient(
-    to right,
-    rgb(28, 2, 60),
-    rgb(126, 51, 237),
-    rgb(28, 2, 60)
-  ); */
   padding: 0.1rem 1rem;
   box-shadow: 0px 4px 16px rgb(36, 36, 36);
   font-weight: 600;
 }
 
-a {
-  color: rgb(0, 0, 0) !important;
+.darkbg {
+  color: #fff !important;
+  background-color: #343a40;
+}
+
+.lightbg {
+  color: #343a40 !important;
+  background-color: #fff;
+}
+
+.fa-sun {
+  color: #fff !important;
+}
+
+.fa-sun,
+.fa-moon {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.tabRight {
+  display: inline-flex;
 }
 
 a:hover {
   text-decoration: none;
   color: rgb(77, 77, 77) !important;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-item {
+  color: rgb(220, 220, 220) !important;
+}
+
+.navbar-light .navbar-item {
+  color: rgb(16, 16, 16) !important;
+}
+
+.navbar-dark .navbar-item:hover,
+.navbar-light .navbar-item:hover,
+.navbar-light .navbar:active,
+.navbar-dark .navbar:active {
+  color: rgb(0, 0, 0) !important;
+  background-color: #cfcdcd;
+  opacity: 0.9;
+  border-radius: 5px;
 }
 
 .card-img-top {
@@ -64,12 +89,9 @@ a:hover {
 .card {
   border-radius: 15px !important;
   height: 320px;
-  /* background: linear-gradient(to right, #03a9f4, #fff 100%); */
   backdrop-filter: blur(15px);
   box-shadow: 5px 6px 16px #000000;
   width: 11rem !important;
-  /* border-top: rgb(28, 2, 60) 1px solid;
-  border-left: rgb(28, 2, 60) 1px solid; */
 }
 
 .card-footer {
@@ -93,7 +115,6 @@ p {
 .icons {
   display: flex;
   font-size: 25px;
-  /* background-color: rgb(28, 2, 60); */
   justify-content: center;
 }
 
@@ -111,10 +132,6 @@ p {
 h6 {
   text-shadow: 1px 1px 10px #878787;
 }
-
-/* .row:hover .card {
-  filter: blur(5px);
-} */
 
 .row .card:hover {
   transform: scale(1.1);
@@ -144,5 +161,9 @@ form {
 
   form {
     justify-content: center;
+  }
+
+  .showTitle {
+    display: none;
   }
 }
