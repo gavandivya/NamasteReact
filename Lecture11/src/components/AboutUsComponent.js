@@ -20,7 +20,7 @@ class AboutUsComponent extends React.Component {
         console.log("Parent render() ");
         return <UserContext.Consumer>{
             ({ email, setEmail }) => {
-                return <div className="container text-center text-white">
+                return <div className="text-center text-white">
                     <h2 className="m-4">About Us</h2>
                     <h5 className="mt-2 mb-4">We are team of 100 members who joined Namaste React and feels it was the best decision of our life!</h5>
                     <span>Context - {email}</span>

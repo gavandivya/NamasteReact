@@ -11,22 +11,15 @@ const CardComponent = ({ details }) => {
   return (
     <div className={`m-5`}>
       <div
-        className={`card rounded-2xl ${
-          themeContext === "dark"
-            ? "text-white bg-slate-800"
-            : "text-black bg-white"
-        }`}
+        className={`card rounded-2xl ${themeContext === "dark"
+          ? "text-white bg-slate-800"
+          : "text-black bg-white"
+          }`}
       >
-        <img src={avatar_url} className="card-img-top img-fluid" alt="avatar" />
-        <div className="card-body">
+        <img src={avatar_url} className="img-fluid" alt="avatar" />
+        <div className="p-2">
           <Link to={`/profile/${login}`}>
-            <h6
-              className={`font-bold ${
-                themeContext === "dark" ? "darkbg" : "lightbg"
-              }`}
-            >
-              {login}
-            </h6>
+            <h6 className={`font-bold`}>{login}</h6>
           </Link>
           <img className="mr-1" width={14} height={14} src={icon.org} />
           <small>{company ? company : "XYZ"}</small>

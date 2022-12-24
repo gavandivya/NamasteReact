@@ -22,7 +22,7 @@ const SearchComponent = ({ DataFromAPI, setFilteredData, setNoRecord }) => {
 
   return (
     <form
-      className="m-3"
+      className="m-3 text-center md:text-left"
       onSubmit={(e) => {
         e.preventDefault();
         const filteredData = searchTeamdetails(searchText, DataFromAPI);

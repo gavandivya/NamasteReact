@@ -13,7 +13,7 @@ const TeamCardComponent = ({ details }) => {
                     className="card-img-top img-fluid"
                     alt="profilePic"
                 />
-                <div className="card-body">
+                <div>
                     <h6 className="font-bold">{name}</h6>
                     <img className="mr-1" width={14} height={14} src={icon.org} />
                     <small>{designation}</small>
