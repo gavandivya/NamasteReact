@@ -10,10 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.1",
     "react-loading-skeleton": "^3.1.0",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.5",
+    "redux": "^4.2.0",
     "simple-image-cdn": "0.0.7"
   },
   "devDependencies": {

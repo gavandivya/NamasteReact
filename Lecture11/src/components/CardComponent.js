@@ -18,7 +18,7 @@ const CardComponent = ({ details }) => {
       >
         <img src={avatar_url} className="img-fluid" alt="avatar" />
         <div className="p-2">
-          <Link to={`/profile/${login}`}>
+          <Link to={`/app/profile/${login}`}>
             <h6 className={`font-bold`}>{login}</h6>
           </Link>
           <img className="mr-1" width={14} height={14} src={icon.org} />
