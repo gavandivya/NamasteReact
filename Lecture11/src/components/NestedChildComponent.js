@@ -1,3 +1,4 @@
+import React from 'react';
 class NestedChildComponent extends React.Component {
 
     constructor(props) {
