@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: linear-gradient(black, black);
+}
+
+img {
+  display: inline;
+}
+
+.icons {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.icons img {
+  margin: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.card .img-fluid {
+  min-height: 180px;
+  max-height: 180px;
+  min-width: 10.9rem;
+  max-width: 10.9rem;
+  border-radius: 8px 8px 0 0px !important;
+}
