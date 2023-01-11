@@ -11,8 +11,8 @@ const userLoginSlice = createSlice({
   },
   reducers: {
     getUser: (state, action) => {
-      state.userName = action.payload.userName;
-      state.image = action.payload.file;
+      state.userName = action.payload.userName,
+        state.image = action.payload.file;
     },
   },
 });
