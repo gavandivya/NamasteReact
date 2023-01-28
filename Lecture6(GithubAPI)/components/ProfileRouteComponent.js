@@ -39,7 +39,7 @@ const ProfileComponent = () => {
               className="img-fluid"
             />
           </div>
-          <div className="col-sm-12 col-md-6 mt-3">
+          <div className="col-sm-12 col-md-6 mt-3 p-1 gifClass">
             <img
               src={`https://github-readme-streak-stats.herokuapp.com/?user=${id}&layout=compact`}
               alt="ongoing-streak-divya"

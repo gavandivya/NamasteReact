@@ -147,6 +147,12 @@ form {
   color: #fff;
 }
 
+.gifClass {
+  background: transparent
+    url("https://media.giphy.com/media/zlcIBNopQj8Yx5QgpR/giphy.gif") center
+    no-repeat;
+}
+
 @media screen and (max-width: 576px) {
   .container {
     width: 50%;
