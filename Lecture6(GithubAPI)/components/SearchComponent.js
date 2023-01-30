@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../context/ThemeContext.js";
 
 const searchTeamdetails = (searchedText, DataFromAPI) => {
@@ -20,18 +20,29 @@ const SearchComponent = ({ DataFromAPI, setFilteredData, setNoRecord }) => {
   const [searchText, setSearchText] = useState("");
   const { themeContext } = useContext(ThemeContext)
 
+
+  useEffect(() => {
+    const filteredData = searchTeamdetails(searchText, DataFromAPI);
+    if (filteredData.length > 0) {
+      setFilteredData(filteredData);
+      setNoRecord(false);
+    } else {
+      setNoRecord(true);
+    }
+  }, [searchText])
+
   return (
     <form
       className="form-inline m-3"
       onSubmit={(e) => {
         e.preventDefault();
-        const filteredData = searchTeamdetails(searchText, DataFromAPI);
-        if (filteredData.length > 0) {
-          setFilteredData(filteredData);
-          setNoRecord(false);
-        } else {
-          setNoRecord(true);
-        }
+        // const filteredData = searchTeamdetails(searchText, DataFromAPI);
+        // if (filteredData.length > 0) {
+        //   setFilteredData(filteredData);
+        //   setNoRecord(false);
+        // } else {
+        //   setNoRecord(true);
+        // }
       }}
     >
       <input
@@ -41,9 +52,9 @@ const SearchComponent = ({ DataFromAPI, setFilteredData, setNoRecord }) => {
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
       />
-      <button className={`btn my-2 my-0" type="submit ${themeContext === "dark" ? "darkbg" : "lightbg"}`}>
+      {/* <button className={`btn my-2 my-0" type="submit ${themeContext === "dark" ? "darkbg" : "lightbg"}`}>
         <i className="fa fa-search"></i>
-      </button>
+      </button> */}
     </form>
   );
 };
