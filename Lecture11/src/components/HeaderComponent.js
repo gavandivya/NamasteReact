@@ -19,25 +19,22 @@ const HeaderComponent = () => {
   };
 
   const handleLogout = () => {
-    dispatch(
-      getUser({
-        userName: "",
-        file: "",
-      })
-    );
+    dispatch(getUser({
+      userName: "",
+      file: "",
+    }));
     navigation("/");
-  };
+  }
 
   return (
     <nav
-      className={`flex justify-between pt-2 ${
-        themeContext === "dark"
-          ? " text-slate-50 bg-slate-800"
-          : " text-slate-800 bg-slate-50"
-      }`}
+      className={`flex justify-between pt-2 ${themeContext === "dark"
+        ? " text-slate-50 bg-slate-800"
+        : " text-slate-800 bg-slate-50"
+        }`}
     >
       <Link className="navbar-brand nav-link" href="#">
-        <img className="inline-flex" width={40} src={icon.logo} alt="logo" />
+        <img className="inline-flex" width={40} src={icon.logo} alt="logo" data-testid="logo" />
         <span className="xsm:hidden font-bold text-2xl">{icon.title}</span>
       </Link>
       <div className="px-5">
@@ -56,11 +53,10 @@ const HeaderComponent = () => {
           <span className="p-2 m-2">Github_Users</span>
         </NavLink>
         <i
-          className={`cursor-pointer ${
-            themeContext === "dark"
-              ? "fa fa-sun text-white"
-              : "fa fa-moon text-slate-800"
-          }`}
+          className={`cursor-pointer ${themeContext === "dark"
+            ? "fa fa-sun text-white"
+            : "fa fa-moon text-slate-800"
+            }`}
           onClick={() => {
             setThemeContext(themeContext === "dark" ? "light" : "dark");
             document.body.style.backgroundImage =

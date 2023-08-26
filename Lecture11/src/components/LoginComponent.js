@@ -2,12 +2,12 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getUser } from "../store/loginSlice";
-import defaultImg from "../../assets/dummy-avatar.jpg";
+// import defaultImg from "../../assets/dummy-avatar.jpg";
 import { useForm } from "react-hook-form";
 
 const LoginComponent = () => {
   const dispatch = useDispatch();
-  const [file, setFile] = useState(defaultImg);
+  const [file, setFile] = useState();
   const navigation = useNavigate();
 
   function handleChange(e) {
@@ -96,12 +96,14 @@ const LoginComponent = () => {
                       autoComplete="off"
                       name="password"
                       type="password"
+                      aria-labelledby="password"
                       className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                       placeholder="Password"
                       {...register("password", { required: true })}
                     />
                     <label
                       htmlFor="password"
+                      id="password"
                       className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
                     >
                       Password
